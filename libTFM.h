@@ -2,6 +2,10 @@
 #define LIBTFM_H
 #include <stdbool.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 enum TFM {
   False,
   Maybe,
@@ -9,5 +13,9 @@ enum TFM {
 };
 
 bool DecodeTFMEnum(enum TFM tfm);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // LIBTFM_H
