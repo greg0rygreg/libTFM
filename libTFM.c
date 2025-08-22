@@ -9,7 +9,7 @@ bool DecodeTFMEnum(enum TFM tfm) {
       return false;
     }
     case Maybe: {
-      srand(time(NULL));
+      srand(clock() + time(NULL));
       return rand() % 2; // lol
     }
     case True: {
