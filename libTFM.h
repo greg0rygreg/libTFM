@@ -6,13 +6,13 @@
 extern "C" {
 #endif
 
-enum TFM {
+typedef enum TFM {
   False,
   Maybe,
   True
-};
+} TFM;
 
-bool DecodeTFMEnum(enum TFM tfm);
+bool decodeTFM(TFM tfm);
 
 #ifdef __cplusplus
 }

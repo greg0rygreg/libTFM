@@ -6,9 +6,9 @@
 int main() {
   printf(
     "False: %d\nMaybe: %d\nTrue: %d\n",
-    DecodeTFMEnum(False),
-    DecodeTFMEnum(Maybe),
-    DecodeTFMEnum(True)
+    decodeTFM(False),
+    decodeTFM(Maybe),
+    decodeTFM(True)
   );
   return 0;
 }

@@ -3,17 +3,14 @@
 #include <time.h>
 
 
-bool DecodeTFMEnum(enum TFM tfm) {
+bool decodeTFM(TFM tfm) {
   switch (tfm) {
-    case False: {
-      return false;
-    }
+    case False: return false; break;
     case Maybe: {
       srand(clock() + time(NULL));
       return rand() % 2; // lol
+      break;
     }
-    case True: {
-      return true;
-    }
+    case True: return true; break;
   }
 }
